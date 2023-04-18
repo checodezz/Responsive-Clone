@@ -1,0 +1,214 @@
+/***********************BODY*******************************************/
+
+body {
+    margin: 0px;
+    background-color: floralwhite;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/******************************Header***********************************/
+header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #343a40;
+}
+
+
+
+
+
+/*********************** FOOTER ITEMS ***********************/
+h2 {
+    color: #fff;
+    padding-left: 10%;
+}
+
+li,
+p,
+figcaption {
+    color: lightgrey;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+/************************HEADER LINKS*************************/
+
+a {
+    text-decoration: none;
+    /* color: #ffff; */
+}
+
+.about {
+    color: #fff;
+}
+
+.toplink {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style: none;
+    padding-top: 45px;
+    padding-left: 10%;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/********************************* BODY LINKS ********************************/
+.secondlink {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    list-style: none;
+    padding: 0% 30%;
+    padding-top: 20px;
+}
+
+.services {
+    color: gray;
+    font-size: medium;
+}
+
+.services:hover {
+    color: lightcoral;
+}
+
+#yellow {
+    color: yellowgreen;
+}
+
+
+/****************************BODY IMAGES AND PROPERTIES*****************/
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0% 15%;
+    margin-top: 1%;
+}
+
+img {
+    align-items: center;
+    width: 90%;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+
+
+
+/******************************Footer*******************************/
+
+footer {
+    background-color: #343a40;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 35px;
+    margin-top: 5%;
+}
+
+
+/***************************MEDIA QUERIES FOR MOBILE*********************************/
+
+@media only screen and (max-width: 480px) {
+    footer {
+        background-color: #343a40;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* padding-top: 35px;
+        margin-top: 5%; */
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: small;
+        margin: auto
+            /* padding-right: 100px; */
+        ;
+    }
+
+    .secondlink {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding: 0%;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .align,
+    .about {
+        text-align: center;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .logo {
+        margin: -22px;
+
+    }
+
+    .about {
+        font-size: small;
+        font-weight: lighter;
+
+    }
+}
+
+/****************************MEDIA QUERIES FOR TABLET***********************************/
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    footer {
+        background-color: #343a40;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* padding-top: 35px;
+        margin-top: 5%; */
+    }
+
+    .secondlink {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding: 0%;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .align,
+    .about {
+        text-align: center;
+    }
+
+    .toplink {
+        margin-top: 0%;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .logo {
+        margin: -22px;
+        width: 30%;
+    }
+
+    .about {
+        font-size: small;
+        font-weight: lighter;
+
+    }
+}
